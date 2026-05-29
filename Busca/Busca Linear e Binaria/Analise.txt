@@ -1,0 +1,26 @@
+1. Por que a busca binária exige que o vetor esteja ordenado?
+O vetor estar ordenado é um requisito fundamental para que a busca binária ocorra,
+porque possibilita comparar elementos entre intervalos, de maneira que 
+flexibiliza a identifição das faixas de valores e permite realizar cortes a fim de 
+encontrar o índice do número procurado.
+
+2. Em quais casos a busca linear em vetor ordenado pode parar antes de chegar ao final do vetor?
+De maneira geral, a busca linear em vetor ordenado para assim que encontrarmos um elemento maior ou igual ao que estamos procurando.
+Posso citar casos como: 
+1 - quando é encontrado o número procurado ao decorrer do vetor.
+2 - quando não é encontrado o número procurado ao decorrer do vetor
+e o número procurado está entre um intervalo de valores (ex: numero desejado é o 5 e o vetor vai do elemento 4 para o 6).
+3 - o número procurado é menor que o primeiro elemento do vetor.
+
+3. O que acontece com a quantidade de comparações da busca linear quando n aumenta?
+A quantidade de comparações em uma busca linear aumenta de maneira proporcional
+a medida em que n aumenta, tendo em vista o pior caso possivel.
+
+4. O que acontece com a quantidade de comparações da busca binária quando n aumenta?
+A quantidade de comparações da busca binária aumenta, não de maneira proporcial a n mas sim de forma logarítmica,
+conforme é adicionado mais entrada de dados, a solução da busca exige maior gasto computacional.
+
+5. Para os testes realizados, a busca binária iterativa e a busca binária recursiva retornaram os
+mesmos  ́ındices? Explique.
+Sim, e não apenas os mesmo índices como também as mesmas quantidades de comparações para obter os valores procurados.
+Cada modelo/método executou o mesmo príncipio de maneira diferente e obtiverem os mesmos resultados.
