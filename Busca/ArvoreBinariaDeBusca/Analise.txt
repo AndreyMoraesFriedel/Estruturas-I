@@ -1,0 +1,18 @@
+1. Por que a impressao em ordem simetrica mostra os valores em ordem crescente?
+Porque é percorrido primeiro o lado esquerdo, depois imprime-se a raiz e posteriormente é percorrido o lado direito,
+e como a arvore esta ordenada - nós a esquerda são menor que o nó pai e o direito são maior ou igual ao nó pai -  os valores 
+impressos ficam em um formato crescente.
+
+2. Por que a busca em uma arvore binaria de busca nao precisa visitar todos os nos, em geral?
+Por causa do fator ordenação, como em uma árvore binária de busca os dados são inseridos de maneira ordenada,
+ao efetuar a busca de um valor é feito a verificação (ex: num é < ou >=) para percorrer a arvore, desta maneira 
+descarta-se a necessidade de se procurar um valor específico por toda a arvore.
+
+3. O que pode acontecer com o desempenho da busca se a arvore ficar muito desbalanceada?
+Imaginando no pior caso possível, a arvore acaba por se tornar uma lista, 
+que por consequência, o tempo de execução para realizar uma busca cai da eficiência logarítmica para O(n).
+
+4. Qual foi o caso de remocão mais trabalhoso de implementar? Explique.
+O caso mais trabalhoso foi para realizar a remocão de um nó que possui dois filhos, que para resolver foi necessário
+obter o nó mais a direita do nó a esquerda do nó que iriamos remover, substituir o valor dos dois nós, e por fim 
+chamar a função novamente passando o nó a esquerda e o valor a ser removido do nó que queriamos remover.
