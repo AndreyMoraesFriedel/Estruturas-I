@@ -1,0 +1,7 @@
+1. Qual e a funcao da operacao hash em uma tabela hash?
+A funcao hash serve para definir corretamente um indice para o vetor da tabela hash, baseado no parametro passado.
+E essencial pois desta maneira elimina a necessidade de se criar um vetor enorme para armazenar poucos dados.
+
+2. O que e uma colisao?
+Colisao e quando tentamos acessar um determinado indice do vetor da tabela hash apos mapear uma chave utilizando a funcao hash
+para adicionar um valor, e esse indice ja esta ocupado por outra chave diferente anteriormente mapeada para o mesmo indice.
